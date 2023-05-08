@@ -29,6 +29,9 @@ router.get('/', (request,response) => {
     response.send("Services Page")
 })
 
+
+//jjg
+
 router.get('/:id([0-9]{1})', (request, response) =>{
     const pageId = Number(request.params.id)
     const userId = listOfServices.find((user)=>user.id === pageId)
