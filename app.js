@@ -2,7 +2,7 @@ const express = require ('express')
 const app = express()
 const Home = require('./Home')
 const About = require('./About')
-const Branch = require('./Branch')
+const Services = require('./Services')
 const Contact = require('./Contact')
 const Knowmore = require('./Knowmore')
 
@@ -13,7 +13,7 @@ app.get('/', (request,response) => {
 
 app.use('/Home', Home)
 app.use('/About', About)
-app.use('/Branch', Branch)
+app.use('/Services', Services)
 app.use('/Contact', Contact)
 app.use('/Knowmore', Knowmore)
 
